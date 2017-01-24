@@ -5,5 +5,5 @@ module.exports = [
   },
   {
     "number": 2,
-    "text": "How many are there countries in Europe?"
+    "text": "How many countries are there in Europe?"
   }];
