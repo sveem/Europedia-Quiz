@@ -1,0 +1,19 @@
+{
+  "name": "europedia-quiz",
+  "version": "1.0.0",
+  "description": "Quiz for European Countries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sveem/Europedia-Quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sveem/Europedia-Quiz/issues"
+  },
+  "homepage": "https://github.com/sveem/Europedia-Quiz#readme"
+}
