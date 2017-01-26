@@ -12,8 +12,7 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sveem/Europedia-Quiz/issues"
-  },
-  "homepage": "https://github.com/sveem/Europedia-Quiz#readme"
+  "devDependencies": {
+    
+  }
 }
