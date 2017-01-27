@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';            
     
 const App = () => {
-  return <div>EUROPEDIA QUIZ!</div>;
+  return <div>Hi!</div>;
 };
 
 
-ReactDOM.render(<App />, document.querySelector('container'));
+ReactDOM.render(<App />, document.querySelector('.container'));
