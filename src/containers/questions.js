@@ -7,13 +7,8 @@ export default class Questions extends Component {
   render () {
     return (
       <ul>
+       {123}
       </ul> 
     );	
-  }
-}
-
-function mapStateToProps(state) {
-  return {
-  	
   }
 }
