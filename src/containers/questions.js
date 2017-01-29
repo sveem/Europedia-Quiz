@@ -11,9 +11,3 @@ export default class Questions extends Component {
     );	
   }
 }
-
-function mapStateToProps(state) {
-  return {
-  	
-  }
-}
