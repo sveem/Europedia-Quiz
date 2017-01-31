@@ -12,3 +12,4 @@ export default class Quiz extends Component {
     );
   }
 }
+
