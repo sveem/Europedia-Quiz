@@ -3,10 +3,9 @@ import { Component } from 'react';
 
 export default class App extends Component {
   render () {
+  console.log(this.props)
     return (
       <div>
-        <h1>Welcome to EUROPEDIA. To begin the quiz press the START button!</h1>
-        <button type="button" onClick={() => console.log("What do you know about Europe?")}>Start</button>
         {this.props.children}      
       </div>
     );

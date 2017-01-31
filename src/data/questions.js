@@ -1,9 +1,10 @@
 module.exports = [
   {
-    "number": 1,
-    "text": "What is the name of the capital city in Poland?",
+    "id": 1,
+    "question": "What is the name of the capital city in Germany?"
   },
   {
-    "number": 2,
-    "text": "How many countries are there in Europe?"
-  }];
+    "id": 2,
+    "question": "How many countries are there in Europe?" 
+  }
+];
