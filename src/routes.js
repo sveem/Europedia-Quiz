@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
+import Quiz from './components/quiz'; 
 
 //TESTING WITH 2 RANDOM ROUTES
 const Question1 = () => {
@@ -14,6 +15,7 @@ const Question2 = () => {
 
 export default (
   <Route path="/" component={App} > 
+    <IndexRoute component={Quiz} />
     <Route path="/test1" component={Question1} />
     <Route path="/test2" component={Question2} />
   </Route>
