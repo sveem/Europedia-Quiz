@@ -5,4 +5,4 @@ const trueOrFalse = (answer) => {
   };
 };
 
-  export default trueOrFalse;
+  export default trueOrFalse
