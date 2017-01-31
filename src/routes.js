@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
-import Quiz from './components/quiz'; 
+import Quiz from './components/quiz';
 
 //TESTING WITH 2 RANDOM ROUTES
 const Question1 = () => {
