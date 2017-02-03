@@ -1,7 +1,8 @@
 import React from 'react';
 import { Component } from 'react';
-import { connect } from 'react-redux'
-import { TrueOrFalse} from '../actions/answers'
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import trueOrFalse from '../actions/answers';
 
 class Answers extends Component {
   constructor(props) {
@@ -9,12 +10,15 @@ class Answers extends Component {
   }
   
   currentAnswer() {
+  	//ToDo: use answer id to connect random question with its answers
+
     let answers = this.props.answers[0].answer;
-     console.log(answers);
      return answers.map((el, idx) => {
        return (
          <li 
- 		     key={idx}> 
+ 		     key={idx}
+ 		     //onClick not finished yet
+ 		     onClick={() => console.log("return answer id: ", el.score)}> 
  		     {el.city}
  		     </li>
        );	
@@ -22,6 +26,7 @@ class Answers extends Component {
   }
 
   render() {
+  	console.log('Props in Answers', this.props)
     return(
       <div>
       	{this.currentAnswer()}
@@ -37,4 +42,7 @@ const mapStateToProps = (state) => {
   }  
 };
 
-export default connect(mapStateToProps, null)(Answers);
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators( { trueOrFalse: trueOrFalse}, dispatch)
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Answers);
