@@ -12,7 +12,7 @@ nextQuestion() {
 //ToDo: To add a functionality for a non repeating random question
   let length = this.props.questions.length,
       index = Math.floor(Math.random() * length);
-  return this.props.questions[index].question;
+    return this.props.questions[index].question;
 }
   render() {
     return(

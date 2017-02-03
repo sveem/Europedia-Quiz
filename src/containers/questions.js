@@ -5,6 +5,7 @@ import { bindActionCreators} from 'redux';
 import { TrueOrFalse} from '../actions/answers'
 import { nextQuestion } from '../actions/questions';
 import NextQuestion from './nextQuestion';
+import Answers from './answers';
 
 class Questions extends Component {
   constructor(props) {
@@ -16,9 +17,7 @@ class Questions extends Component {
     return (
       <div>	
         <NextQuestion />
-        <ul>
-         Berlin
-        </ul>
+        <Answers />
       </div> 
     );	
   }
