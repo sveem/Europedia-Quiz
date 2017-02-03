@@ -9,14 +9,22 @@ class Answers extends Component {
   }
   
   currentAnswer() {
-  console.log("This.props", this.props)
+    let answers = this.props.answers[0].answer;
+     console.log(answers);
+     return answers.map((el, idx) => {
+       return (
+         <li 
+ 		     key={idx}> 
+ 		     {el.city}
+ 		     </li>
+       );	
+    });
   }
+
   render() {
     return(
       <div>
-        <ul>
       	{this.currentAnswer()}
-        </ul>	
       </div>
     );
   }

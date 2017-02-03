@@ -10,9 +10,9 @@ class NextQuestion extends Component {
 
 nextQuestion() {
 //ToDo: To add a functionality for a non repeating random question
-  let length = this.props.questions.length,
-      index = Math.floor(Math.random() * length);
-    return this.props.questions[index].question;
+  // let length = this.props.questions.length,
+  //     index = Math.floor(Math.random() * length);
+    return this.props.questions[0].question;
 }
   render() {
     return(
