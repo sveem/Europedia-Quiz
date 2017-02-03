@@ -1,8 +1,8 @@
-const trueOrFalse = (answer) => {
+const trueOrFalse = (answerId) => {
   return {
     type: "TRUE_ANSWER",
-    payload: answer
+    payload: answerId
   };
 };
 
-  export default trueOrFalse
+export default trueOrFalse

@@ -3,6 +3,9 @@ import { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators} from 'redux';
 import { TrueOrFalse} from '../actions/answers'
+import { nextQuestion } from '../actions/questions';
+import NextQuestion from './nextQuestion';
+import Answers from './answers';
 
 class Questions extends Component {
   constructor(props) {
@@ -13,10 +16,8 @@ class Questions extends Component {
   	console.log("Props", this.props)
     return (
       <div>	
-        <h1>Germany</h1>
-        <ul>
-         Berlin
-        </ul>
+        <NextQuestion />
+        <Answers />
       </div> 
     );	
   }
@@ -25,7 +26,8 @@ class Questions extends Component {
 const mapStateToProps = (state) => {
   console.log("THE STATE", state);
   return {
-    answers: state.answers
+    answers: state.answers,
+    questions: state.questions
   };
 }
 
