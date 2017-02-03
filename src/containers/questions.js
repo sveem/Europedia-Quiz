@@ -9,6 +9,11 @@ class Questions extends Component {
     super(props);
   }
 
+  // randomQuestion() {
+  //   let this.props
+  //   let random = Math.floor(Math.random() * )
+
+  // }
   render () {
   	console.log("Props", this.props)
     return (
