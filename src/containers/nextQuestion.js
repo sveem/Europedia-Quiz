@@ -4,12 +4,20 @@ import { connect } from 'react-redux';
 import { nextQuestion } from '../actions/questions';
 
 class NextQuestion extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+nextQuestion() {
+//ToDo: To add a functionality for a non repeating random question
+  let length = this.props.questions.length,
+      index = Math.floor(Math.random() * length);
+  return this.props.questions[index].question;
+}
   render() {
-  	console.log("Next Question",this.props)
     return(
       <div>
-        <h1>Which is the Capital of Berlin?
-        </h1>
+        <h2>{this.nextQuestion()}</h2>
       </div>	
     );
   }

@@ -11,12 +11,6 @@ class Questions extends Component {
     super(props);
   }
 
-  randomQuestion() {
-    let randomLength = this.props.questions.length;
-    let random = Math.floor(Math.random() * randomLenght);
-    let nextQuestion = this.props.questions[random].question;
-  }
-
   render () {
   	console.log("Props", this.props)
     return (
