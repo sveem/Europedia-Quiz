@@ -8,16 +8,13 @@ class NextQuestion extends Component {
     super(props);
   }
 
-
-
 currentQuestion() {
-  let i = 0;
   return this.props.questions[0].question;
 }
 
 currentAnswer() {
-//ToDo: use answer id to connect random question with its answers
 let answers = this.props.questions[0].answer;
+
   return answers.map((el, idx) => {
     return (
     <li 
