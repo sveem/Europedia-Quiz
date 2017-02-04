@@ -8,16 +8,32 @@ class NextQuestion extends Component {
     super(props);
   }
 
-nextQuestion() {
-//ToDo: To add a functionality for a non repeating random question
-  // let length = this.props.questions.length,
-  //     index = Math.floor(Math.random() * length);
+
+
+currentQuestion() {
+  let i = 0;
   return this.props.questions[0].question;
+}
+
+currentAnswer() {
+//ToDo: use answer id to connect random question with its answers
+let answers = this.props.questions[0].answer;
+  return answers.map((el, idx) => {
+    return (
+    <li 
+    key={idx}
+    //onClick not finished yet
+    onClick={() => console.log("return answer id: ", el.status)}> 
+    {el.city}
+    </li>
+   ); 
+ });
 }
   render() {
     return(
       <div>
-      <h2>{this.nextQuestion()}</h2>
+      <h2>{this.currentQuestion()}</h2>
+      <div>{this.currentAnswer()}</div>
       </div>	
     );
   }
