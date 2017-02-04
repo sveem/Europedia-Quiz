@@ -14,7 +14,7 @@ class Questions extends Component {
     return (
       <div>	
       <NextQuestion />
-      <p>Answer: 1</p>
+      <p>Answer: </p>
       </div> 
     );	
   }

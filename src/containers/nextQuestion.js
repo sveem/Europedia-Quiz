@@ -1,7 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { nextQuestion } from '../actions/questions';
+import trueOrFalse from '../actions/answers'
 
 class NextQuestion extends Component {
   constructor(props) {
@@ -14,13 +16,16 @@ currentQuestion() {
 
 currentAnswer() {
 let answers = this.props.questions[0].answer;
-
+let status;
   return answers.map((el, idx) => {
+    if(el.score) {
+      status = el.score
+    }
     return (
     <li 
     key={idx}
     //onClick not finished yet
-    onClick={() => console.log("return answer id: ", el.status)}> 
+    onClick={() => this.props.trueOrFalse(status)}> 
     {el.city}
     </li>
    ); 
@@ -42,4 +47,8 @@ const mapStateToProps = (state) => {
   }  
 };
 
-export default connect(mapStateToProps, null)(NextQuestion);
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators( { trueOrFalse: trueOrFalse}, dispatch)
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(NextQuestion);

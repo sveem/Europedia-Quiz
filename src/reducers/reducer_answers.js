@@ -1,8 +1,8 @@
-export default function (state = [], action) {
+export default function (state = 0, action) {
   switch(action.type) {
     case "TRUE_ANSWER":
-    console.log("TRUE ANSWER", action.payload)
-      return action.payload;
+    console.log("state", state)
+      return state + 1;
   }
   return state;
 }

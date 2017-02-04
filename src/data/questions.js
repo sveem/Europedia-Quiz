@@ -6,22 +6,18 @@ module.exports = [
     "answer": [
       {
         city: "Berlin",
-        status: true,
         score: 1
       },
       {
         city: "Cologne",
-        status: false,
         score: 0
       },
       {
         city: "Hamburg",
-        status: false,	
         score: 0
       },
       {
         city: "Munich",
-        status: false,
         score: 0
       },
     ]
