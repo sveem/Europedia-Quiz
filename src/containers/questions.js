@@ -11,13 +11,11 @@ class Questions extends Component {
   constructor(props) {
     super(props);
   }
-
   render () {
-  	console.log("Props", this.props)
     return (
       <div>	
-        <NextQuestion />
-        <Answers />
+      <NextQuestion />
+      <Answers />
       </div> 
     );	
   }
@@ -29,6 +27,6 @@ const mapStateToProps = (state) => {
     answers: state.answers,
     questions: state.questions
   };
-}
+};
 
 export default connect(mapStateToProps, null)(Questions);
